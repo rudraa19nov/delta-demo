@@ -1,0 +1,130 @@
+/* public folder is used to serve static data like java script code , stule , images etc */
+body{
+     font-family: "Plus Jakarta Sans", sans-serif !important;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+button {
+    background-color: transparent !important;
+    border: none !important;
+    color: rgb(245, 237, 237); /* Text color */
+}
+.custom-navbar {
+    background-color: white !important;
+    height: 5rem !important;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links,.f-info-socials , .f-info-brands{
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials{
+    font-size: 1.5rem;
+    margin-right: 1.2rem;
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+
+}
+   
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400 !important;
+}
+.listing-link{
+    text-decoration: none !important;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{ 
+    opacity:0.3 ;
+    background-color:white;
+}
+.btn-danger {
+    background-color: #fe424d !important;
+    color:#ebebeb !important;
+}
+
+/* show page */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+}
+.edit-btn{
+    background-color: red !important;
+}
+.btn {
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+.my-delete-btn {
+  background-color: #000 !important;
+  border-color: #000 !important;
+  color: white !important;
+  font-weight: bold;
+  padding: 2px 8px;   /* smaller padding */
+  font-size: 12px;    /* smaller text */
+  border-radius: 4px;
+  width: auto;
+  display: inline-block !important;
+}
+
+.my-delete-btn:hover {
+  background-color: #222 !important;
+  border-color: #222 !important;
+}
+.btn-search i{
+display: inline;
+margin-right: 0.5;
+}
+
+.search-inp{
+    padding: 0.5rem 25rem 0.5rem 25rem;
+}
