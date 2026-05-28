@@ -76,6 +76,10 @@ app.use(flash());//lsiting ,review routes s phle flash use krnge
 //passport session bhi use krta h 
 app.use(passport.initialize());
 app.use(passport.session());//use to know that ki jo req br br bhji ja rhi vo same hi user ki hai ar agr same hai to usko dubara password dalne ki jarurat nhi h
+app.use((req, res, next) => {
+    res.locals.currUser = req.user;
+    next();
+});
 passport.use(new LocalStrategy(User.authenticate()));
 
 passport.serializeUser(User.serializeUser());//user se related info session me store krana
@@ -114,6 +118,8 @@ app.use(( err,req,res,next)=>{
   // res.send("something went wrong")
 })
 
-app.listen(8080, () => {
-  console.log("server is listening to port 8080");
+// Use Render’s PORT
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`server is listening on port ${PORT}`);
 });
